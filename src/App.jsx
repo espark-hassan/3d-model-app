@@ -7,7 +7,7 @@ import {
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
-import Car from "./models/car";
+import Car from "./models/Car";
 import * as THREE from "three";
 import { Box2 } from "three";
 import { Sky } from "./models/Sky";
