@@ -9,7 +9,7 @@ export function Sky() {
   const sky = useGLTF(skyScene);
 
   return (
-    <mesh>
+    <mesh scale={0.1}>
       <primitive object={sky.scene} />
     </mesh>
   );

@@ -14,6 +14,7 @@ import { a } from "@react-spring/three";
 
 const Car = (props) => {
   const { nodes, materials } = useGLTF(isCarScene);
+  const Cae = useGLTF(isCarScene);
   const { gl, viewport } = useThree();
   const isCarRef = useRef();
 
@@ -25,7 +26,7 @@ const Car = (props) => {
 
   return (
     <a.group ref={isCarRef} {...props} castShadow>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.1} castShadow>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={15} castShadow>
         {props.isGlassShow && (
           <mesh
             castShadow
