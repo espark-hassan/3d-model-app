@@ -11,7 +11,6 @@ import Car from "./models/Car";
 import * as THREE from "three";
 import { Box2 } from "three";
 import { Sky } from "./models/Sky";
-import Weapon from "./models/Weapon";
 import Table from "./models/Table";
 import "./styles.css";
 import Dish from "./models/falafel";
@@ -67,7 +66,6 @@ const App = () => {
             <Dishes />
             <Drinks />
             <Spoons />
-            <Weapon />
             <Chairs />
             <Environment preset="night" background blur={1} />
           </Suspense>
