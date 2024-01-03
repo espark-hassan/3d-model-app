@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 import Pizza from "./Pizza";
 
 const Falafel = (props) => {
-  const { nodes, materials } = useGLTF("public/models/dish.glb");
+  const { nodes, materials } = useGLTF("/models/dish.glb");
   return (
     <>
       <group visible={props.visible} {...props} dispose={null}>

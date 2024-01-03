@@ -11,7 +11,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 const CocoCola = (props) => {
-  const { nodes, materials } = useGLTF("public/models/coca_cola.glb");
+  const { nodes, materials } = useGLTF("/models/coca_cola.glb");
   return (
     <group
       visible={props.visible}

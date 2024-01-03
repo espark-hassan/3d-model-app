@@ -11,7 +11,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 const Pepsi = (props) => {
-  const { nodes, materials } = useGLTF("public/models/Pepsi.glb");
+  const { nodes, materials } = useGLTF("/models/pepsi.glb");
   return (
     <group scale={0.2} position={[0, 0.31, -0.39]} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, -2.71]} scale={1.256}>

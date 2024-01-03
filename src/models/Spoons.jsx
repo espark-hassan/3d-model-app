@@ -11,7 +11,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 const Spoons = (props) => {
-  const { nodes, materials } = useGLTF("public/models/spoons.glb");
+  const { nodes, materials } = useGLTF("/models/spoons.glb");
   return (
     <group {...props} dispose={null} scale={0.1} position={[0.1, 0.55, 0.6]}>
       <mesh

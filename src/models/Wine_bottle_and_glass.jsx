@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 import Context from "../context";
 
 const WineBottle = (props) => {
-  const { nodes, materials } = useGLTF("public/models/whiskey.glb");
+  const { nodes, materials } = useGLTF("/models/whiskey.glb");
   const { tableItems, setTableItems } = useContext(Context);
 
   return (

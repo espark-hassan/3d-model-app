@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 import Context from "../context";
 
 const Chairs = (props) => {
-  const { nodes, materials } = useGLTF("public/models/chair.glb");
+  const { nodes, materials } = useGLTF("/models/chair.glb");
   const { tableItems, setTableItems } = useContext(Context);
 
   const chairsDirection = [
