@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import * as THREE from "three";
 import { Box2 } from "three";
 import { Sky } from "../models/Sky";
@@ -10,7 +10,7 @@ import Spoons from "../models/Spoons";
 import Configurator from "./Configurator";
 import Dishes from "./Dishes";
 import Drinks from "./Drinks";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import Chairs from "./Chairs";
 import {
   Environment,
