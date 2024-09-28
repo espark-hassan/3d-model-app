@@ -64,7 +64,7 @@ const DineInTable = () => {
           <Drinks />
           <Spoons />
           <Chairs />
-          <Environment preset="night" background blur={1} />
+          <Environment preset="dawn" background blur={1} />
         </Suspense>
       </Canvas>
       <Configurator />

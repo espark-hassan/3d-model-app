@@ -1,6 +1,6 @@
 import React from "react";
 import ContextProvider from "./contextProvider";
-// import DineInTable from "./components/DineInTable";
+import DineInTable from "./components/DineInTable";
 import "./styles.css";
 import Random from "./components/Random";
 import { OrbitControls } from "@react-three/drei";
@@ -10,8 +10,8 @@ const App = () => {
   return (
     <div className="h-[100vh] w-[100wh]">
       <ContextProvider>
-        {/* <DineInTable /> */}
-        <Canvas>
+        <DineInTable />
+        {/* <Canvas>
           <OrbitControls
             //   makeDefault
             minPolarAngle={0}
@@ -20,7 +20,7 @@ const App = () => {
 
           <color attach={"background"} args={["#213547"]} />
           <Random />
-        </Canvas>
+        </Canvas> */}
       </ContextProvider>
     </div>
   );
